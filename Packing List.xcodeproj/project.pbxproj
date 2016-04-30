@@ -13,6 +13,12 @@
 		7F37F6361CC64CA500245108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F37F6341CC64CA500245108 /* Main.storyboard */; };
 		7F37F6381CC64CA500245108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F37F6371CC64CA500245108 /* Assets.xcassets */; };
 		7F37F63B1CC64CA500245108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F37F6391CC64CA500245108 /* LaunchScreen.storyboard */; };
+		7F37F6431CC6542D00245108 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F37F6421CC6542D00245108 /* MapKit.framework */; };
+		7F37F6461CC6546000245108 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37F6451CC6546000245108 /* MapViewController.m */; };
+		7F37F6491CC659B700245108 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37F6481CC659B700245108 /* MapPin.m */; };
+		7F37F64C1CC6696400245108 /* ItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37F64B1CC6696400245108 /* ItemListViewController.m */; };
+		7F37F64F1CC68A2300245108 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37F64E1CC68A2300245108 /* Data.m */; };
+		7F37F6511CC9374C00245108 /* Geotica_2012.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F37F6501CC9374C00245108 /* Geotica_2012.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,16 @@
 		7F37F6371CC64CA500245108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F37F63A1CC64CA500245108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F37F63C1CC64CA500245108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F37F6421CC6542D00245108 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7F37F6441CC6546000245108 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		7F37F6451CC6546000245108 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		7F37F6471CC659B700245108 /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		7F37F6481CC659B700245108 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
+		7F37F64A1CC6696400245108 /* ItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListViewController.h; sourceTree = "<group>"; };
+		7F37F64B1CC6696400245108 /* ItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemListViewController.m; sourceTree = "<group>"; };
+		7F37F64D1CC68A2300245108 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		7F37F64E1CC68A2300245108 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		7F37F6501CC9374C00245108 /* Geotica_2012.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Geotica_2012.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F37F6431CC6542D00245108 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,7 @@
 		7F37F61F1CC64CA500245108 = {
 			isa = PBXGroup;
 			children = (
+				7F37F6421CC6542D00245108 /* MapKit.framework */,
 				7F37F62A1CC64CA500245108 /* Packing List */,
 				7F37F6291CC64CA500245108 /* Products */,
 			);
@@ -58,6 +76,7 @@
 		7F37F62A1CC64CA500245108 /* Packing List */ = {
 			isa = PBXGroup;
 			children = (
+				7F37F6501CC9374C00245108 /* Geotica_2012.otf */,
 				7F37F62E1CC64CA500245108 /* AppDelegate.h */,
 				7F37F62F1CC64CA500245108 /* AppDelegate.m */,
 				7F37F6311CC64CA500245108 /* ViewController.h */,
@@ -67,6 +86,14 @@
 				7F37F6391CC64CA500245108 /* LaunchScreen.storyboard */,
 				7F37F63C1CC64CA500245108 /* Info.plist */,
 				7F37F62B1CC64CA500245108 /* Supporting Files */,
+				7F37F6441CC6546000245108 /* MapViewController.h */,
+				7F37F6451CC6546000245108 /* MapViewController.m */,
+				7F37F6471CC659B700245108 /* MapPin.h */,
+				7F37F6481CC659B700245108 /* MapPin.m */,
+				7F37F64A1CC6696400245108 /* ItemListViewController.h */,
+				7F37F64B1CC6696400245108 /* ItemListViewController.m */,
+				7F37F64D1CC68A2300245108 /* Data.h */,
+				7F37F64E1CC68A2300245108 /* Data.m */,
 			);
 			path = "Packing List";
 			sourceTree = "<group>";
@@ -140,6 +167,7 @@
 				7F37F63B1CC64CA500245108 /* LaunchScreen.storyboard in Resources */,
 				7F37F6381CC64CA500245108 /* Assets.xcassets in Resources */,
 				7F37F6361CC64CA500245108 /* Main.storyboard in Resources */,
+				7F37F6511CC9374C00245108 /* Geotica_2012.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F37F6331CC64CA500245108 /* ViewController.m in Sources */,
+				7F37F64C1CC6696400245108 /* ItemListViewController.m in Sources */,
+				7F37F6491CC659B700245108 /* MapPin.m in Sources */,
 				7F37F6301CC64CA500245108 /* AppDelegate.m in Sources */,
+				7F37F64F1CC68A2300245108 /* Data.m in Sources */,
 				7F37F62D1CC64CA500245108 /* main.m in Sources */,
+				7F37F6461CC6546000245108 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
