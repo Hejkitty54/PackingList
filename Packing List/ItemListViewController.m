@@ -89,18 +89,21 @@
 }
 
 - (IBAction)add:(id)sender {
-    NSMutableDictionary* item = @{@"name":self.itemTextField.text,@"checked":@"no"}.mutableCopy;
-    int count=0;
     
-    for( NSMutableDictionary* item in self.listData){
-        if ([[item objectForKey:@"checked"]isEqualToString:@"no"]) {
-            count++;
+    if (self.itemTextField.text.length > 0) {
+        NSMutableDictionary* item = @{@"name":self.itemTextField.text,@"checked":@"no"}.mutableCopy;
+        int count=0;
+        
+        for( NSMutableDictionary* item in self.listData){
+            if ([[item objectForKey:@"checked"]isEqualToString:@"no"]) {
+                count++;
+            }
         }
+        
+        [self.listData insertObject:item atIndex:count];
+        [self.ListTableView reloadData];
+        self.itemTextField.text = @"";
     }
-    
-    [self.listData insertObject:item atIndex:count];
-    [self.ListTableView reloadData];
-    self.itemTextField.text = @"";
 }
 
 - (IBAction)save:(id)sender {
